@@ -1,2 +1,1 @@
-
-this is good of my python projects 
+This is the first project of python 
