@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-import random
-number = random.randint(-10000, 10000)
-str1 = " and is greater than 5"
-str2 = " and is 0"
-str3 = " and is less than 6 and not 0"
-if number < 0:
-    last = number % -10
-else:
-    last = number % 10
-if last > 5:
-    print("Last digit of {} is {}".format(number, last) + str1)
-elif last == 0:
-    print("Last digit of {} is {}".format(number, last) + str2)
-else:
-    print("Last digit of {} is {}".format(number, last) + str3)
+# python program to display calculating operations
+
+if __name__ == '__main__':
+    from calculator_1 import add, sub, mul, div
+
+    a = 10
+    b = 5
+
+# display the results
+    print("{} + {} = {}".format(a, b, add(a, b)))
+    print("{} - {} = {}".format(a, b, sub(a, b)))
+    print("{} * {} = {}".format(a, b, mul(a, b)))
+    print("{} / {} = {}".format(a, b, div(a, b)))
