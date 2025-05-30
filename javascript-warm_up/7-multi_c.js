@@ -1,7 +1,10 @@
 #!/usr/bin/node
 
-const arrayStrings = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 let i = 0;
-for (i; i < arrayStrings.length; i++) {
-  console.log(arrayStrings[i]);
+if (process.argv[2]) {
+  for (i; i < process.argv[2]; i++) {
+    console.log('C is fun');
+  }
+} else {
+  console.log('Missing number of occurrencest');
 }
